@@ -1,0 +1,75 @@
+﻿@model IEnumerable<TaikuriApp.Models.Taikuri>
+
+@{
+    ViewData["Title"] = "Taikureiden hallinta - ADMIN";
+}
+
+
+<h1>Taikureiden hallinta - ADMIN</h1>
+
+<p>
+    <a asp-action="Create">Luo uusi Taikuri</a>
+</p>
+@using(Html.BeginForm("Index", "Home", FormMethod.Get))
+{
+    <label for="Toimialat">Toimialat</label>
+  <select name="Toimialat" id="Toimialat">
+      <option value=""></option>
+        <option value="lastentaikuus">Lasten taikuus</option>
+        <option value="aikuistentaikuus">Aikuisten taikuus</option>
+        <option value="kaikille">Kaikille</option>
+        
+    </select>
+    <text>Lokaatio</text>  <select name="Lokaatio" id="Lokaatio">
+        <option value=""></option>
+        <option value="Helsinki">Helsinki</option>
+        <option value="Espoo">Espoo</option>
+        <option value="Vantaa">Vantaa</option>
+        
+    </select>
+ <label for="Haku">Taiteilijanimi haku</label>  @Html.TextBox("Haku") <input type = "submit"
+   name = "submit"
+   value ="Haku">
+}
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Taiteilijanimi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Toimialat)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Taidot)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Lokaatio)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Taiteilijanimi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Toimialat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Taidot)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Lokaatio)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.TaikuriId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.TaikuriId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.TaikuriId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

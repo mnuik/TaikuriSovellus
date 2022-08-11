@@ -1,0 +1,439 @@
+body {
+}
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
+
+$border-radius-size: 14px;
+$barbarian: #EC9B3B;
+$archer: #EE5487;
+$giant: #F6901A;
+$goblin: #82BB30;
+$wizard: #4FACFF;
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to bottom, rgba(140,122,122,1) 0%, rgba(175,135,124,1) 65%, rgba(175,135,124,1) 100%) fixed;
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/coc-background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font: 14px/20px "Lato", Arial, sans-serif;
+  color: #9E9E9E;
+  margin-top: 30px;
+}
+
+
+.slide-container {
+  margin: auto;
+  width: 100%;
+  
+  text-align: center;
+}
+
+.wrapper {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  &:focus
+
+{
+  outline: 0;
+}
+
+}
+
+
+
+.clash-card {
+  background: white;
+  width: 300px;
+  height: 800px;
+  display: inline-block;
+  
+  border-radius:5px;
+  position: relative;
+  text-align: center;
+  box-shadow: -1px 15px 30px -12px black;
+  z-index: 9999;
+}
+
+.clash-card__image {
+  position: relative;
+  height: 230px;
+  margin-bottom: 35px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.clash-card__image--barbarian {
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian-bg.jpg');
+  img
+
+{
+  width: 400px;
+  position: absolute;
+  top: -65px;
+  left: -70px;
+}
+
+}
+
+.clash-card__image--archer {
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/archer-bg.jpg');
+  img
+
+{
+  width: 400px;
+  position: absolute;
+  top: -34px;
+  left: -37px;
+}
+
+}
+
+.clash-card__image--giant {
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/giant-bg.jpg');
+  img
+
+{
+  width: 340px;
+  position: absolute;
+  top: -30px;
+  left: -25px;
+}
+
+}
+
+.clash-card__image--goblin {
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/goblin-bg.jpg');
+  img
+
+{
+  width: 370px;
+  position: absolute;
+  top: -21px;
+  left: -37px;
+}
+
+}
+
+.clash-card__image--wizard {
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/wizard-bg.jpg');
+  img
+
+{
+  width: 345px;
+  position: absolute;
+  top: -28px;
+  left: -10px;
+}
+
+}
+
+.clash-card__level {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+
+.clash-card__level--barbarian {
+  color: $barbarian;
+}
+
+.clash-card__level--archer {
+  color: $archer;
+}
+
+.clash-card__level--giant {
+  color: $giant;
+}
+
+.clash-card__level--goblin {
+  color: $goblin;
+}
+
+.clash-card__level--wizard {
+  color: $wizard;
+}
+
+.clash-card__unit-name {
+  font-size: 26px;
+  color: black;
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+
+.clash-card__unit-description {
+  padding: 20px;
+  padding-left:30px;
+  padding-right: 30px;
+  margin-bottom: 10px;
+}
+
+.clash-card__unit-stats--barbarian {
+  background: $barbarian;
+  .one-third
+
+{
+  border-right: 1px solid #BD7C2F;
+}
+
+}
+
+.clash-card__unit-stats--archer {
+  background: $archer;
+  .one-third
+
+{
+  border-right: 1px solid #D04976;
+}
+
+}
+
+.clash-card__unit-stats--giant {
+  background: $giant;
+  .one-third
+
+{
+  border-right: 1px solid darken($giant, 8%);
+}
+
+}
+
+.clash-card__unit-stats--goblin {
+  background: $goblin;
+  .one-third
+
+{
+  border-right: 1px solid darken($goblin, 6%);
+}
+
+}
+
+.clash-card__unit-stats--wizard {
+  background: $wizard;
+  .one-third
+
+{
+  border-right: 1px solid darken($wizard, 6%);
+}
+
+}
+
+.clash-card__unit-stats {
+  color: white;
+  font-weight: 700;
+  border-bottom-left-radius: $border-radius-size;
+  border-bottom-right-radius: $border-radius-size;
+  .one-third
+
+{
+  width: 33%;
+  float: left;
+  padding: 20px 15px;
+}
+
+sup {
+  position: absolute;
+  bottom: 4px;
+  font-size: 45%;
+  margin-left: 2px;
+}
+
+.stat {
+  position: relative;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.stat-value {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.no-border {
+  border-right: none;
+}
+
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.slick-prev {
+  left: 100px;
+  z-index: 999;
+}
+
+.slick-next {
+  right: 100px;
+  z-index: 999;
+}
+
+/*-------------------------------*/
+<style >
+body {
+  background: #e2eaef;
+  font-family: "Open Sans", sans-serif;
+}
+
+h2 {
+  color: #000;
+  font-size: 26px;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  margin: 30px 0 60px;
+}
+
+
+.carousel {
+  margin: 50px auto;
+  padding: 0 70px;
+}
+
+  .carousel .item {
+    color: #747d89;
+    min-height: 325px;
+    text-align: center;
+    overflow: hidden;
+    align-content:center;
+  }
+
+
+.carousel .thumb-wrapper {
+  background: white;
+  width: 200px;
+  height: 700px;
+  display: inline-block;
+  margin: auto;
+  border-radius:5px;
+  position: relative;
+  text-align: center;
+  box-shadow: -1px 15px 30px -12px black;
+  z-index: 9999;
+}
+
+  .carousel .thumb-content .btn {
+    color: #7ac400;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: none;
+    border: 1px solid #7ac400;
+    padding: 6px 14px;
+    margin-top: 5px;
+    line-height: 16px;
+    border-radius: 20px;
+  }
+
+    .carousel .thumb-content .btn:hover, .carousel .thumb-content .btn:focus {
+      color: #fff;
+      background: #7ac400;
+      box-shadow: none;
+    }
+
+    .carousel .thumb-content .btn i {
+      font-size: 14px;
+      font-weight: bold;
+      margin-left: 5px;
+    }
+
+  .carousel .carousel-control {
+    height: 44px;
+    width: 40px;
+    background: #7ac400;
+    margin: auto;
+    border-radius: 4px;
+    opacity: 0.8;
+  }
+
+    .carousel .carousel-control:hover {
+      background: #78bf00;
+      opacity: 1;
+    }
+
+    .carousel .carousel-control i {
+      font-size: 36px;
+      position: absolute;
+      top: 50%;
+      display: inline-block;
+      margin: -19px 0 0 0;
+      z-index: 5;
+      left: 0;
+      right: 0;
+      color: #fff;
+      text-shadow: none;
+      font-weight: bold;
+    }
+
+  .carousel .item-price {
+    font-size: 13px;
+    padding: 2px 0;
+  }
+
+    .carousel .item-price strike {
+      opacity: 0.7;
+      margin-right: 5px;
+    }
+
+  .carousel .carousel-control.left i {
+    margin-left: -2px;
+  }
+
+  .carousel .carousel-control.right i {
+    margin-right: -4px;
+  }
+
+  .carousel .carousel-indicators {
+    bottom: -50px;
+  }
+
+.carousel-indicators li, .carousel-indicators li.active {
+  width: 10px;
+  height: 10px;
+  margin: 4px;
+  border-radius: 50%;
+  border: none;
+}
+
+.carousel-indicators li {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+  .carousel-indicators li.active {
+    background: rgba(0, 0, 0, 0.6);
+  }
+
+.carousel .wish-icon {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  z-index: 99;
+  cursor: pointer;
+  font-size: 16px;
+  color: #abb0b8;
+}
+
+  .carousel .wish-icon .fa-heart {
+    color: #ff6161;
+  }
+
+.star-rating li {
+  padding: 0;
+}
+
+.star-rating i {
+  font-size: 14px;
+  color: #ffc000;
+}
+
+</style >

@@ -1,0 +1,213 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+ <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bootstrap Multiple Item Product Carousel</title>
+ <link rel="stylesheet" href="~/css/kortti.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Open+Sans">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+   
+  
+  
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2> <b>Taikurimme</b></h2>
+                <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+                    <!-- Carousel indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        
+                     
+                    </ol>
+
+                    <!-- Wrapper for carousel items -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <div class="thumb-wrapper">
+
+                                        <div class="clash-card barbarian">
+                                            <div class="clash-card__image clash-card__image--barbarian">
+                                                <img src="~/projektikuva3.png" style="height:120%; max-height: 400px " alt="barbarian" />
+                                            </div>
+                                            <div class="clash-card__level clash-card__level--barbarian">K-18</div>
+                                            <div class="clash-card__unit-name">ManlyMan</div>
+                                            <div class="clash-card__level clash-card__level--barbarian">Helsinki</div>
+                                            <div class="clash-card__unit-description">
+                                                <p> ManlyMan on aikuisten taikuri, jonka vaatteet ovat yleensä ne, jotka tekevät temput. Niillä on nimittäin tapana hävitä näkymättömiin mitä ihmeellisimmin tavoin!</p>
+                                                <br />
+                                                <p><i>"Ei jättänyt ketään tai mitään kylmäksi!"</i> -Mircculi, 59</p>
+                                                <p><i>"Vaatteet kertakaikkiaan hävisivät! Kukaan ei löytänyt niitä enää! Hän otti sitten meiltä pyyhkeen lainaksi kun lähti. 10/10!"</i> -Mikko, 31</p>
+                                            </div>
+
+                                            <div class="clash-card__unit-stats clash-card__unit-stats--barbarian clearfix">
+                                                <div class="one-third">
+                                                    <div class="stat">20<sup>S</sup></div>
+                                                    <div class="stat-value">Training</div>
+                                                </div>
+
+                                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                                            </div>
+
+                                        </div> <!-- end clash-card barbarian-->
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-3">
+                                    <div class="thumb-wrapper">
+
+                                        <div class="clash-card archer">
+                                            <div class="clash-card__image clash-card__image--archer">
+                                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/archer.png" alt="archer" />
+                                            </div>
+                                            <div class="clash-card__level clash-card__level--archer">Ennustaja | Mentalisti</div>
+                                            <div class="clash-card__unit-name">Hullu-Helga</div>
+                                            <div class="clash-card__level clash-card__level--archer">Espoo</div>
+                                            <div class="clash-card__unit-description">
+                                                <p>Tiedätkö mitä? No, Hullu-Helga tietää!</p>
+                                                <p>Ajan ja paikan rajoista piittaamaton ennustaja/mentalisti Hullu-Helga raottaa todellisuuden verhoa sinullekin - maksusta tietenkin.</p>
+                                                <br />
+                                                <p><i>"Ihan epätodellista. Vau!"</i> -Seija, 29</p>
+                                                <p><i>"En enää tiedä milloin olen."</i> -Mikko, 51</p>
+                                            </div>
+
+                                            <div class="clash-card__unit-stats clash-card__unit-stats--archer clearfix">
+                                                <div class="one-third">
+                                                    <div class="stat">25<sup>S</sup></div>
+                                                    <div class="stat-value">Training</div>
+                                                </div>
+
+                                                <a href="#" class="btn btn-primary">Add to Cart</a>
+
+                                            </div>
+
+                                        </div> <!-- end clash-card archer-->
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-3">
+                                    <div class="thumb-wrapper">
+
+                                        <div class="clash-card giant">
+                                            <div class="clash-card__image clash-card__image--giant">
+                                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/giant.png" alt="giant" />
+                                            </div>
+                                            <div class="clash-card__level clash-card__level--giant">Lasten taikuri</div>
+                                            <div class="clash-card__unit-name">Johan Pomppas</div>
+                                            <div class="clash-card__level clash-card__level--giant">Vantaa</div>
+                                            <div class="clash-card__unit-description">
+                                                <p>Keskenkasvuisten kikatuttaja ja taaperoiden typerryttäjä Johan Pomppas on Ala-Tikkurilan lahja lastenkutsujen järjestäjille!</p>
+                                                <p>Saattaa puhua suomea ja ruotsia sekaisin koska ei erota kieliä toisistaan, mutta sepäs vain vaahtosammuttimia naurattaa. </p>
+                                                <br />
+                                                <p><i>"Aikuiset eivät ihan pysyneet kärryillä, mutta lapset olivat pähkinöinä."</i> -Seija, 30</p>
+                                                <p><i>"Äpäpäpäpä ÄHÄHÄHÄHÄHÄÄÄ!"</i> -Salme-Unelma, 1</p>
+                                            </div>
+
+                                            <div class="clash-card__unit-stats clash-card__unit-stats--giant clearfix">
+                                                <div class="one-third">
+                                                    <div class="stat">2<sup>M</sup></div>
+                                                    <div class="stat-value">Training</div>
+                                                </div>
+                                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                                            </div>
+
+                                        </div> <!-- end clash-card giant-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <div class="thumb-wrapper">
+
+                                        <div class="clash-card goblin">
+                                            <div class="clash-card__image clash-card__image--goblin">
+                                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/goblin.png" alt="goblin" />
+                                            </div>
+                                            <div class="clash-card__level clash-card__level--goblin">Noita</div>
+                                            <div class="clash-card__unit-name">Irmeli</div>
+                                            <div class="clash-card__level clash-card__level--goblin">Vantaa</div>
+                                            <div class="clash-card__unit-description">
+                                                <p>Jotain vähän tehokkaampaa hakusessa? Huolet pois, Irmeli auttaa.</p> <p>Läntisen pääkaupunkiseudun epäilyttävin entiteetti on myös ainoa joka uskaltaa käyttää kunnon kirouksia ja vitsauksia.</p>
+                                                <br />
+                                                <p><i>"Tosi tehokas. Mutta vähän epävakaa."</i> -Kaizu. 19</p>
+                                                <p><i>"Kysyy ihan pientä hiustuppoa päästäsi. Älä anna."</i> -Oleg, 43</p>
+
+                                            </div>
+
+                                            <div class="clash-card__unit-stats clash-card__unit-stats--goblin clearfix">
+                                                <div class="one-third">
+                                                    <div class="stat">30<sup>S</sup></div>
+                                                    <div class="stat-value">Training</div>
+                                                </div>
+                                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                                            </div>
+
+                                        </div> <!-- end clash-card goblin-->
+                                    </div>
+                                </div>
+
+
+                                <div class="col-sm-3">
+                                    <div class="thumb-wrapper">
+
+                                        <div class="clash-card wizard">
+                                            <div class="clash-card__image clash-card__image--wizard">
+                                                <img src="~/Taikuri2b.png" style="width:120%; max-heigth: 400px "alt="wizard" />
+                                            </div>
+                                            <div class="clash-card__level clash-card__level--wizard">Yleistaikuri | Lastentaikuri</div>
+                                            <div class="clash-card__unit-name">Cosmo-Osmo</div>
+                                            <div class="clash-card__unit-description">
+                                                <p>Ovatko öögasi tylsästi oikein päin? Ei hätää, Cosmo-Osmo temputtaa silmäsi oitis käännyksiin!</p>
+                                                <p>Lapsiystävällinen yleistaikuri laittaa aivot solmuun niin vauvalta kuin vaariltakin. Sekä muunikäisiltä siitä väliltä, kunhan kukkuu-leikit ja photoshopit on käyty läpi.</p>
+                                                <br />
+                                                <p><i>"Kyllä olikin mukavaa. Ai että."</i> -Riikka, 50</p>
+                                                <p><i>"Mitään en muista, mutta kiva fiilis."</i> -Hamsan, 23</p>
+                                            </div>
+                                            <div class="clash-card__unit-stats clash-card__unit-stats--wizard clearfix">
+                                                <div class="one-third">
+                                                    <div class="stat">5<sup>M</sup></div>
+                                                    <div class="stat-value">Training</div>
+                                                </div>
+
+                                            </div>
+                                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                                        </div> <!-- end clash-card wizard-->
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           
+
+                <!-- Carousel controls -->
+               <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+				<i class="fa fa-angle-left"></i>
+			</a>
+			<a class="carousel-control right" href="#myCarousel" data-slide="next">
+				<i class="fa fa-angle-right"></i>
+			</a>
+            </div>
+           
+        </div>
+         
+    </div>
+
+</body>
+</html>
