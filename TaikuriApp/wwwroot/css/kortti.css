@@ -1,5 +1,3 @@
-body {
-}
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
 
 $border-radius-size: 14px;
@@ -10,33 +8,31 @@ $goblin: #82BB30;
 $wizard: #4FACFF;
 
 *, *:before, *:after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  background: linear-gradient(to bottom, rgba(140,122,122,1) 0%, rgba(175,135,124,1) 65%, rgba(175,135,124,1) 100%) fixed;
-  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/coc-background.jpg') no-repeat center center fixed;
-  background-size: cover;
-  font: 14px/20px "Lato", Arial, sans-serif;
-  color: #9E9E9E;
-  margin-top: 30px;
+    background: linear-gradient(to bottom, rgba(140,122,122,1) 0%, rgba(175,135,124,1) 65%, rgba(175,135,124,1) 100%) fixed;
+    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/coc-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font: 14px/20px "Lato", Arial, sans-serif;
+    color: #9E9E9E;
+    margin-top: 30px;
 }
 
-
 .slide-container {
-  margin: auto;
-  width: 100%;
-  
-  text-align: center;
+    margin: auto;
+    width: 600px;
+    text-align: center;
 }
 
 .wrapper {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  &:focus
+    padding-top: 40px;
+    padding-bottom: 40px;
+    &:focus
 
 {
-  outline: 0;
+    outline: 0;
 }
 
 }
@@ -44,24 +40,25 @@ body {
 
 
 .clash-card {
-  background: white;
-  width: 300px;
-  height: 800px;
-  display: inline-block;
-  
-  border-radius:5px;
-  position: relative;
-  text-align: center;
-  box-shadow: -1px 15px 30px -12px black;
-  z-index: 9999;
+    background: white;
+    width: 300px;
+    height: 750px;
+    display: inline-block;
+    margin: auto;
+    border-radius: 5px;
+    position: relative;
+    text-align: center;
+    box-shadow: -1px 15px 30px -12px black;
+    z-index: 9999;
 }
 
 .clash-card__image {
-  position: relative;
-  height: 230px;
-  margin-bottom: 35px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+    position: relative;
+    height: 230px;
+    
+    margin-bottom: 35px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .clash-card__image--barbarian {
@@ -108,10 +105,11 @@ body {
   img
 
 {
-  width: 370px;
-  position: absolute;
-  top: -21px;
-  left: -37px;
+    width: 370px;
+    position: absolute;
+    top: -21px;
+    left: -37px;
+    right: 2em;
 }
 
 }
@@ -278,11 +276,7 @@ sup {
 }
 
 /*-------------------------------*/
-<style >
-body {
-  background: #e2eaef;
-  font-family: "Open Sans", sans-serif;
-}
+
 
 h2 {
   color: #000;
@@ -347,51 +341,12 @@ h2 {
       margin-left: 5px;
     }
 
-  .carousel .carousel-control {
-    height: 44px;
-    width: 40px;
-    background: #7ac400;
-    margin: auto;
-    border-radius: 4px;
-    opacity: 0.8;
-  }
 
     .carousel .carousel-control:hover {
       background: #78bf00;
       opacity: 1;
     }
 
-    .carousel .carousel-control i {
-      font-size: 36px;
-      position: absolute;
-      top: 50%;
-      display: inline-block;
-      margin: -19px 0 0 0;
-      z-index: 5;
-      left: 0;
-      right: 0;
-      color: #fff;
-      text-shadow: none;
-      font-weight: bold;
-    }
-
-  .carousel .item-price {
-    font-size: 13px;
-    padding: 2px 0;
-  }
-
-    .carousel .item-price strike {
-      opacity: 0.7;
-      margin-right: 5px;
-    }
-
-  .carousel .carousel-control.left i {
-    margin-left: -2px;
-  }
-
-  .carousel .carousel-control.right i {
-    margin-right: -4px;
-  }
 
   .carousel .carousel-indicators {
     bottom: -50px;
@@ -413,27 +368,4 @@ h2 {
     background: rgba(0, 0, 0, 0.6);
   }
 
-.carousel .wish-icon {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  z-index: 99;
-  cursor: pointer;
-  font-size: 16px;
-  color: #abb0b8;
-}
 
-  .carousel .wish-icon .fa-heart {
-    color: #ff6161;
-  }
-
-.star-rating li {
-  padding: 0;
-}
-
-.star-rating i {
-  font-size: 14px;
-  color: #ffc000;
-}
-
-</style >
